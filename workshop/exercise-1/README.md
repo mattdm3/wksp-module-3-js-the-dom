@@ -28,7 +28,7 @@ Add classes with `JS`!
 _By now, you all know how bad it is to style with tagnames and `id`s._
 
 3. In `styles.css` replace the tags with classes (We can leave `#main` and `body`. They don't annoy me _too_ much. 😜)
-4. Now add the class names to the `exercise.html` file.
+4. Now add the class names to the `exercise.html` file .
 5. Once you've completed this exercise, **nothing** should have changed. You just have more efficient code... not for long!
 
 B-E-A-U-tiful!

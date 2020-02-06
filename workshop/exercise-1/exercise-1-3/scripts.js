@@ -1,6 +1,6 @@
-document.head.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" type="text/css"/>';
+document.head.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet" />';
 
-
+let body = document.querySelector("body");
 let main = document.getElementById("main");
 let headingText = document.createElement("heading");
 let pTag = document.createElement("pTag");
@@ -10,6 +10,51 @@ let img = document.createElement("img");
 let pTag3 = document.createElement("pTag3");
 let pTag4 = document.createElement("pTag4");
 let anchor = document.createElement("anchor");
+
+// BODY STYLING
+body.style.background = "rgba(246,187,33, .8) url(./images/yellow-umbrella.jpg) no-repeat";
+body.style.backgroundSize = "100%";
+body.style.fontFamily = 'Playfair Display';
+
+// MAIN STYLING
+main.style.background = "#fafafa";
+main.style.borderRadius = "4px";
+main.style.boxShadow = "8px 10px 25px 0 rgba(128, 128, 128, .44)";
+main.style.minWidth = "320px";
+main.style.maxWidth = "600px";
+main.style.margin = "36px";
+main.style.padding = "4px 32px 32px";
+
+// h1 h2 styling
+headingText.style.fontFamily = "Open Sans";
+subheading.style.fontFamily = "Open Sans";
+headingText.style.textAlign = "center";
+subheading.style.textAlign = "left";
+
+// Paragraph tags
+
+pTag.style.fontSize = "17px";
+pTag2.style.fontSize = "17px";
+pTag3.style.fontSize = "17px";
+pTag4.style.fontSize = "17px";
+
+// IMAGE
+
+img.style.border = "#fafafa";
+img.style.borderRadius = "4px";
+img.style.boxShadow = "4px 4px 14px rgba(128, 128, 128, .4)";
+img.style.width = "100%";
+
+// ANCHOR
+
+anchor.style.color = "#174E7C";
+anchor.style.display = "block";
+anchor.style.weigth = "700";
+anchor.style.marginTop = "auto";
+anchor.style.textAlign = "right";
+anchor.style.textDecoration = "none";
+
+
 
 headingText.innerHTML = '<h1>The best How I Met Your Mother episode (according to fans)</h1>';
 pTag.innerHTML = '<p>As impossible as it seems to name just 1 of the 208 legendary episodes as the “best”, the fans have spoken and the highest rated episode is… wait for it…</p>'

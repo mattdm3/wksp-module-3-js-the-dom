@@ -5,7 +5,7 @@ const FROGS = 3;
 
 const track = document.getElementById("track");
 
-for (l = 1; l <= FROGS; l++) {
+for (l = 1; l < FROGS; l++) {
     // 2. Create li    
     let lane = document.createElement('li');
     track.appendChild(lane);
@@ -16,6 +16,18 @@ for (l = 1; l <= FROGS; l++) {
     // 4. Assign an id to each lane
     lane.id = `lane-${l}`;
 }
+
+// 2
+
+let racers = [];
+
+for (count = 0; count <= FROGS; count++) {
+    let frogArray = frogStable[count];
+    racers.push(frogArray);
+}
+
+console.log(racers);
+
 
 
 
