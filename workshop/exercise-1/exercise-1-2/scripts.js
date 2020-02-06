@@ -1,6 +1,13 @@
-document.head.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" type="text/css"/>';
+// document.head.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap" rel="stylesheet" /><link rel="stylesheet" href="styles.css" type="text/css"/>';
 
+// Add <link> to CSS
+const head = document.getElementsByTagName('head');
+const stylesheet = document.createElement('link');
+stylesheet.rel = 'stylesheet';
+stylesheet.href = 'styles.css';
+head[0].appendChild(stylesheet);
 
+let body = document.querySelector("body");
 let main = document.getElementById("main");
 let headingText = document.createElement("heading");
 let pTag = document.createElement("pTag");
@@ -10,6 +17,18 @@ let img = document.createElement("img");
 let pTag3 = document.createElement("pTag3");
 let pTag4 = document.createElement("pTag4");
 let anchor = document.createElement("anchor");
+
+// ADD CLASSES 
+headingText.classList.add("h1");
+subheading.classList.add("h2");
+pTag.classList.add("p");
+pTag2.classList.add("p");
+pTag3.classList.add("p");
+pTag4.classList.add("p");
+img.classList.add("img");
+anchor.classList.add("a");
+
+
 
 headingText.innerHTML = '<h1>The best How I Met Your Mother episode (according to fans)</h1>';
 pTag.innerHTML = '<p>As impossible as it seems to name just 1 of the 208 legendary episodes as the “best”, the fans have spoken and the highest rated episode is… wait for it…</p>'
